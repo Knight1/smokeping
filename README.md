@@ -150,6 +150,12 @@ You can use the modified configuration with:
     sudo docker run -it --name smokeping -p 8000:80 \
                 -v /some/path:/etc/smokeping:ro -d dperson/smokeping
 
+If you want to use old graphes or want to save it outside the container use:
+
+   -v /some/path:/var/lib/smokeping 
+
+after -p PORT and befor -d NAME
+
 # User Feedback
 
 ## Issues
