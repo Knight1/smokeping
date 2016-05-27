@@ -9,5 +9,5 @@ dependencies:
 
 test:
   override:
-    - sudo docker run -it --name smokeping -p 8000:80 -d knight1/smokeping; sleep 10
+    - sudo docker run -it --name smokeping -p 8080:80 -d knight1/smokeping; sleep 10
     - curl --retry 10 --retry-delay 5 -v http://localhost:8080
